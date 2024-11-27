@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex; /* Replacing floats for layout */
+    padding: 5px;
+    height: 100%;
+    width: 100%; /* Ensure it spans the full width */
+}
+
+.numberBox {
+    display: flex;
+    align-content: center;
+    background: cyan;
+    height: 95vh;
+    width: 100%;
+}
+
+.column {
+    /*flex: 1;*/
+    padding: 10px;
+    align-content: top;
+}
+
+.red, .black, .green {
+    width: 10vh;
+}
+
+.red{
+    background:red;
+}
+.green{
+    background: green;
+}
+.black{
+    background: black;
+}
+
+.bot {
+    background: red;
+    height: 5vh;
+}

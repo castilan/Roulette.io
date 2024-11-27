@@ -2,10 +2,42 @@
 <!doctype html>
 <html lang="en-US">
   <head>
+      <link rel="stylesheet" href="roulette.css">
     <meta charset="utf-8" />
-    <title>***Fernanoulette ***</title>
+    <title>***Fernandoulette ***</title>
   </head>
   <body>
+    <div class="column">
+        <div class="numberBox">
+            <h2>PAST NUMBERS</h2>
+            <div class="column red" id="red-column">
+                
+                
+              </div>
+              <div class="column green" id="green-column">
+                
+                <p>Some text..</p>
+              </div>
+              <div class="column black" id="black-column">
+                
+                <p style="color: white;">Some text..</p>
+              </div>
+              
 
+        </div>
+
+        <div class="bot">
+            <h3>INPUT NEW NUMBER</h3>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="numbers.js"></script>
+    <script>
+        // Call the function for each column
+        loadTextFile('rednumbers.txt', 'red-column');
+        loadTextFile('greennumbers.txt', 'green-column');
+        loadTextFile('blacknumbers.txt', 'black-column');
+    </script>
   </body>
 </html>
