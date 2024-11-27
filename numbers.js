@@ -14,6 +14,7 @@ function loadTextFile(filePath, elementId) {
         .then(data => {
             // Insert the file content into the specified element
             document.getElementById(elementId).innerText = data;
+            document.getElementById(elementId).style.fontSize = '60px';
         })
         .catch(error => {
             console.error(`Error fetching the file "${filePath}":`, error);

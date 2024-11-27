@@ -5,38 +5,37 @@
 }
 
 .row {
-    display: flex; /* Replacing floats for layout */
-    padding: 5px;
+    display: flex;
     height: 100%;
-    width: 100%; /* Ensure it spans the full width */
+    width: 100%;
 }
 
 .numberBox {
     display: flex;
     align-content: center;
-    background: cyan;
+    background: green;
     height: 95vh;
     width: 100%;
 }
 
 .column {
     /*flex: 1;*/
-    padding: 10px;
     align-content: top;
 }
 
 .red, .black, .green {
     width: 10vh;
+    background: black;
 }
 
 .red{
-    background:red;
+    color: red;
 }
 .green{
-    background: green;
+    color: green;
 }
 .black{
-    background: black;
+    color: white;
 }
 
 .bot {
