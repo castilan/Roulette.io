@@ -20,3 +20,11 @@ function loadTextFile(filePath, elementId) {
             console.error(`Error fetching the file "${filePath}":`, error);
         });
 }
+
+function megaEnter(){
+    let number = document.getElementById("newNumber").value;
+    
+    //console.log(number);
+    
+}
+
