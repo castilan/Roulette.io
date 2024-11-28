@@ -1,22 +1,25 @@
 #!/usr/bin/python
 
-def delete_top_line(textFile):
-    with open(textFile, "r") as file:
-        lines = file.readlines()
-
-    with open(textFile, "w") as file:
-        file.writelines(lines[1:])
+def delete_bot_line(textFile):
+	with open(textFile, "r") as file:
+		lines = file.readlines()
+	with open(textFile, "w") as file:
+		file.writelines(lines[:-1])
 
 
 def getLineCount(textFile):
 	with open(textFile, "r") as file:
-    		line_count = sum(1 for line in file)
+		line_count = sum(1 for line in file)
 	return line_count
 
 def appendValue(textFile, value):
-        with open(textFile, "a") as file:
-                file.write(f"{value}\n")
-                                        
+	with open(textFile, "r") as file:
+		content = file.read()
+
+	with open(textFile, "w") as file:
+		file.write(value + "\n" + content)
+
+
 def main():
 	i = 0
 	while i < 1000: 
@@ -41,9 +44,9 @@ def main():
 		
 		redLineCount = getLineCount("rednumbers.txt")
 		if redLineCount > 10:
-			delete_top_line("rednumbers.txt")
-			delete_top_line("blacknumbers.txt")
-			delete_top_line("greennumbers.txt")
+			delete_bot_line("rednumbers.txt")
+			delete_bot_line("blacknumbers.txt")
+			delete_bot_line("greennumbers.txt")
 					
 
 		i = i + 1
