@@ -23,21 +23,19 @@ def appendValue(textFile, value):
 def main():
 	i = 0
 	while i < 1000: 
-		color = input("Choose color(r, b, g): ")
 		number = input("Enter number: ")
-	
-		if color == 'r':
+		intNumber = int(number)
+
+		if intNumber in {1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 15, 27, 30, 32, 34, 36}:	
 			appendValue("rednumbers.txt", number)
 			appendValue("blacknumbers.txt", " ")
 			appendValue("greennumbers.txt", " ")
-
-		if color == 'b':
+		if intNumber in {2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35}:
 			appendValue("blacknumbers.txt", number)
 			appendValue("greennumbers.txt", " ")
 			appendValue("rednumbers.txt", " ")
 
-
-		elif color == 'g':
+		if intNumber in {0, 00}:
 			appendValue("greennumbers.txt", number)
 			appendValue("blacknumbers.txt", " ")
 			appendValue("rednumbers.txt", " ")
