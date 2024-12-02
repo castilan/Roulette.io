@@ -3,7 +3,8 @@
  * @param {string} filePath - The path to the text file.
  * @param {string} elementId - The ID of the element where the content will be displayed.
  */
-function loadTextFile(filePath, elementId) {
+
+function loadTextFile(filePath, elementId, fSize) {
     fetch(filePath)
         .then(response => {
             if (!response.ok) {
@@ -14,7 +15,8 @@ function loadTextFile(filePath, elementId) {
         .then(data => {
             // Insert the file content into the specified element
             document.getElementById(elementId).innerText = data;
-            document.getElementById(elementId).style.fontSize = '60px';
+            document.getElementById(elementId).style.fontSize = fSize;
+            
         })
         .catch(error => {
             console.error(`Error fetching the file "${filePath}":`, error);
@@ -23,7 +25,7 @@ function loadTextFile(filePath, elementId) {
 
 function megaEnter(){
     let number = document.getElementById("newNumber").value;
-    
+
     //console.log(number);
     
 }

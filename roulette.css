@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-.header {
+.stats {
     padding: 15px;
 }
 .row {
@@ -28,6 +28,7 @@
 .red, .black, .green {
     width: 10vh;
     background: black;
+    padding:4px;
 }
 
 .red{
@@ -44,3 +45,41 @@
     background: red;
     height: 5vh;
 }
+
+.statBox{
+    
+    padding-left: 3px;
+    background: antiquewhite;
+}
+
+.miniStat{
+    display: flex;
+    
+}
+
+.table, th, td {
+
+}
+
+.jeremy {
+    display: flex;
+    height: 150px;
+    width: 150px;
+}
+/*/*
+                <table>
+                  <tr>
+                    <th style="color: antiquewhite; border-color:antiquewhite;">........................</th>
+                    <th style="color: antiquewhite; border-color: antiquewhite;">........................</th>
+                  </tr>
+                  <tr>
+                    <th>ODD</th>
+                    <th id="odd"></th>
+                    
+                  </tr>
+                  <tr>
+                    <th style="color: antiquewhite; border-color:antiquewhite;">........................</th>
+                    <th style="color: antiquewhite; border-color: antiquewhite;">........................</th>
+                  </tr>
+                  <tr>
+                </table>*/

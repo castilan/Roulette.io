@@ -9,8 +9,53 @@
   <body>
     <div class="column">
         <div class="numberBox">
-            <h2 style="color: antiquewhite;" class="header">PAST NUMBERS</h2>
+            <div class="stats"
+            ><h2 style="color: antiquewhite;" class="header">
+              
+              PAST NUMBERS</h2>
+              <h2><u>STATISTICS</u></h2>
 
+              <div class="statBox">
+                <div class="miniStat">
+                  <h3>ODD............</h3>
+                  <h4 id="odd" ></h4>
+                  <h4>%</h4>
+                </div>
+                <div class="miniStat">
+                  <h3>EVEN..........</h3>
+                  <h4 id="even"></h4>
+                  <h4>%</h4>
+                </div>
+                <div class="miniStat">
+                  <h3>RED............</h3>
+                  <h4 id="red"></h4>
+                  <h4>%</h4>
+                </div>
+                <div class="miniStat">
+                  <h3>ZERO.........</h3>
+                  <h4 id="zero"></h4>
+                  <h4>%</h4>
+                </div>
+                <div class="miniStat">
+                  <h3>BLACK......</h3>
+                  <h4 id="black"></h4>
+                  <h4>%</h4>
+                </div>
+                <div class="miniStat">
+                  <h3>LOW...........</h3>
+                  <h4 id="low"></h4>
+                  <h4>%</h4>
+                </div>
+                <div class="miniStat">
+                  <h3>HIGH..........</h3>
+                  <h4 id="high"></h4>
+                  <h4>%</h4>
+                </div>
+                <img class="jeremy" src="0EAF782B-89D4-4EFD-B29E-E93FE24756B2.JPG">
+                <h2>Jeremy is pleased with the results.</h2>
+              </div>
+              <h3></h3>
+            </div>
             <div class="column red" id="red-column">
             </div>
             <div class="column black" id="black-column">
@@ -26,9 +71,16 @@
     <script type="text/javascript" src="numbers.js"></script>
     <script>
         // Call the function for each column
-        loadTextFile('rednumbers.txt', 'red-column');
-        loadTextFile('greennumbers.txt', 'green-column');
-        loadTextFile('blacknumbers.txt', 'black-column');
+        loadTextFile('rednumbers.txt', 'red-column', '60px');
+        loadTextFile('greennumbers.txt', 'green-column', '60px');
+        loadTextFile('blacknumbers.txt', 'black-column', '60px');
+        loadTextFile('odd.txt', 'odd', '20px');
+        loadTextFile('even.txt', 'even', '20px');
+        loadTextFile('red.txt', 'red', '20px');
+        loadTextFile('zero.txt', 'zero', '20px');
+        loadTextFile('black.txt', 'black', '20px');
+        loadTextFile('low.txt', 'low', '20px');
+        loadTextFile('high.txt', 'high', '20px');
     </script>
   </body>
 </html>
